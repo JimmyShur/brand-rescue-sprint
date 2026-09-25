@@ -78,6 +78,16 @@
     .fit-grid h3 { margin: 0 0 18px; font-size: 1.3rem; }
     .fit-grid ul { padding-left: 19px; margin: 0; color: var(--muted); }
     .fit-grid li + li { margin-top: 9px; }
+    .offer-intro { max-width: 780px; margin: 22px 0 0; color: var(--muted); font-size: 1.08rem; }
+    .offers { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 42px; }
+    .offer { display: flex; flex-direction: column; border: 1px solid var(--line); background: rgba(255,255,255,.22); padding: clamp(26px, 4vw, 42px); }
+    .offer-head { display: flex; align-items: start; justify-content: space-between; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+    .offer h3 { margin: 0; font-size: clamp(1.6rem, 3vw, 2.5rem); letter-spacing: -.045em; }
+    .offer-price { white-space: nowrap; font: 850 clamp(1.5rem, 3vw, 2.4rem)/1 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--warm); }
+    .offer > p { color: var(--muted); }
+    .offer ul { padding-left: 20px; margin: 14px 0 24px; }
+    .offer li + li { margin-top: 8px; }
+    .offer-boundary { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
     .cta { background: var(--ink); color: var(--paper); }
     .cta .wrap { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(40px, 7vw, 96px); align-items: start; }
     .cta h2 { max-width: 850px; }
@@ -103,6 +113,8 @@
       .step h3 { margin-top: 32px; }
       .fit-grid { grid-template-columns: 1fr; }
       .deliverables { grid-template-columns: 1fr; }
+      .offers { grid-template-columns: 1fr; }
+      .offer-head { align-items: baseline; }
       .form-grid { grid-template-columns: 1fr; }
       .field.full { grid-column: auto; }
       section { padding: 58px 0; }
@@ -181,6 +193,28 @@
         <div class="fit-grid">
           <article><h3>This is built for</h3><ul><li>Founder-led consumer brands</li><li>Packaging or product launches</li><li>Brands with scattered creative execution</li><li>Teams needing a clear priority order</li></ul></article>
           <article><h3>This is not</h3><ul><li>A complete rebrand in three days</li><li>Unlimited production work</li><li>A generic automated score</li><li>A promise that every problem is visual</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="eyebrow">When diagnosis points to a bigger move</div>
+        <h2 style="margin-top:14px;max-width:980px">Start with clarity. Build only what the brand needs.</h2>
+        <p class="offer-intro">The Sprint stands on its own. If it confirms that the problem requires execution—not another round of opinions—Shurpath can take on one focused next phase for a company, product line, or new venture.</p>
+        <div class="offers">
+          <article class="offer">
+            <div class="offer-head"><h3>Essential Brand Website</h3><div class="offer-price">$2,500</div></div>
+            <p>A clean, credible marketing site that gives the brand one clear story and one useful path to action.</p>
+            <ul><li>Up to five core pages</li><li>Light message and page-structure refinement</li><li>Responsive design and build</li><li>Contact form, basic analytics, and domain launch</li><li>One consolidated revision round</li></ul>
+            <div class="offer-boundary"><strong>Fixed scope:</strong> excludes ecommerce, memberships, custom applications, photography, ongoing SEO, hosting, and third-party platform fees.</div>
+          </article>
+          <article class="offer">
+            <div class="offer-head"><h3>Foundational Rebrand</h3><div class="offer-price">$5,000</div></div>
+            <p>A disciplined identity and message reset—not a logo dropped into a folder and called strategy.</p>
+            <ul><li>Positioning and brand foundation</li><li>Core message and voice direction</li><li>Logo suite, color, and typography system</li><li>Practical brand guidelines</li><li>Three launch-ready starter applications</li></ul>
+            <div class="offer-boundary"><strong>Fixed scope:</strong> excludes naming, trademark/legal work, website development, multi-SKU packaging rollout, photography, and ongoing campaign production.</div>
+          </article>
         </div>
       </div>
     </section>
