@@ -132,6 +132,13 @@
     .offer li + li { margin-top: 7px; }
     .offer-boundary { margin-top: 18px; color: var(--faint); font-size: .84rem; }
     .offer-boundary strong { color: var(--white); }
+    .proof-section { background: linear-gradient(180deg, rgba(23,23,29,.28), transparent); }
+    .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 5vw, 64px); margin-top: 48px; }
+    .proof-card { padding-top: 24px; border-top: 1px solid var(--line); }
+    .proof-card h3 { margin-bottom: 16px; }
+    .proof-card p, .proof-card ul { color: var(--muted); }
+    .proof-card ul { margin: 0; padding-left: 19px; }
+    .proof-card li + li { margin-top: 8px; }
     .cta { overflow: hidden; background: #08080B; }
     .cta::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle at 16% 18%, rgba(122,53,255,.18), transparent 28rem), linear-gradient(112deg, transparent 0 62%, rgba(105,167,255,.08) 62.2%, transparent 62.8%); }
     .cta .wrap { display: grid; grid-template-columns: .78fr 1.08fr; gap: clamp(42px, 7vw, 92px); align-items: start; z-index: 1; position: relative; }
@@ -160,6 +167,7 @@
       .rail b { margin-bottom: 24px; }
       .offer { grid-template-columns: 1fr; gap: 16px; }
       .offer-price { text-align: left; }
+      .proof-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 680px) {
       .wrap { width: min(calc(100% - 28px), var(--max)); }
@@ -294,6 +302,32 @@
             <h3>Foundational Rebrand</h3>
             <div><p>A disciplined identity and message reset—not a logo dropped into a folder and called strategy.</p><ul><li>Positioning and brand foundation</li><li>Core message and voice direction</li><li>Logo suite, color, and typography system</li><li>Practical brand guidelines</li><li>Three launch-ready starter applications</li></ul><div class="offer-boundary"><strong>Fixed scope:</strong> excludes naming, trademark/legal work, website development, multi-SKU packaging rollout, photography, and ongoing campaign production.</div></div>
             <div class="offer-price">$5,000</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-section">
+      <div class="wrap">
+        <div class="eyebrow">Who's behind this</div>
+        <h2 class="section-title-offset build-title">A brand operator, not a deck factory.</h2>
+        <div class="proof-grid">
+          <article class="proof-card">
+            <h3>What the teardown looks like</h3>
+            <p>You won't get a 60-slide audit. You'll get a one-page executive diagnosis, five ranked findings with evidence, and a 30-day calendar that tells you what to fix first—and what to ignore for now.</p>
+          </article>
+          <article class="proof-card">
+            <h3>What you'll know after 72 hours</h3>
+            <ul>
+              <li>The single brand problem costing the most trust</li>
+              <li>Five fixes ranked by impact and effort</li>
+              <li>A clear sequence for the next 30 days</li>
+              <li>Whether a larger rebrand is worth it—or premature</li>
+            </ul>
+          </article>
+          <article class="proof-card">
+            <h3>Why this works</h3>
+            <p>The Sprint is built from real consumer-brand launch experience: packaging, retail, DTC, trade shows, and campaigns where the biggest waste came from fixing the wrong thing first. Diagnosis before decoration.</p>
           </article>
         </div>
       </div>
